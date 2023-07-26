@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@700&family=Work+Sans:wght@400;500&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@700&family=Work+Sans:wght@400;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+:root {
+
+    --heading: #4A5D23;
+    --bgcolor: #D0F0C0;
+    --bgcolor2:
+    #A9BA9D;
+    --para: #008B8B;
+
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+   
+
+   
+    height: 100vh;
+    margin: auto ;
+    padding: 30px;
+   background-color: var(--bgcolor);
+
+
+
+}
+
+
+.box h3{
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: var(--heading);
+
+    font-size: 3vmin;
+
+}
+
+.box h1 {
+    text-transform: uppercase;
+    color: var(--heading);
+    margin: 50px auto;
+    font-size: 5vmin;
+}
+
+.groupMember {
+    margin-top: 10px;
+    border: 2px solid brown;
+
+    display: flex;
+
+}
+
+
+
+.cards {
+    width: 100%;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    gap: 35px;
+    padding: 35px;
+}
+
+.card-section {
+    width: 100%;
+  
+    border-radius: 25px;
+    box-shadow: 5px 10px var(--para);
+    border: 5px solid var(--heading);
+    padding: 10px;
+    color: #008B8B;
+    font-size: 1.5vmin;
+
+
+
+
+}
+.card-section p{
+    font-size: 1.75vmin;
+    line-height: 15px;
+    text-transform: capitalize;
+}
+
+.card-section h4{
+font-size: 2.5vmin;
+font-weight: bold;
+text-transform: uppercase;
+color: var(--heading);
+}
+
+.card-section h6{
+    font-size: 2.5vmin;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.advisor{
+    margin-top: 25px;
+
+   
+}
+
+.advisor-card{
+    text-transform: uppercase;
+    border-radius: 25px;
+    box-shadow: 5px 10px var(--para);
+    border: 5px solid var(--heading);
+    width: 350px;
+    height: 180px;
+    padding: 10px;
+}
+
+.advisor-card h4{
+    color: var(--heading);
+    font-size: 2vmin;
+    text-transform: uppercase;
+}
+
+.advisor-card h3{
+    color: var(--heading);
+    font-size: 0.5vmin;
+    text-transform: uppercase;
+}
+
+.advisor-card h6{
+    color: var(--heading);
+    font-size: 2.5vmin;
+    text-transform: uppercase;
+}
+
+.advisor-card p{
+
+    color: var(--para);
+    font-size: 1.75vmin;
+    line-height: 15px;
+    text-transform: capitalize;
+}
+
+
+#discription{
+ 
+
+    height: 100vh;
+  
+}
+
+#discription h2{
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+
+    text-transform: uppercase;
+    color: var(--heading);
+    font-family: 'Anton', sans-serif;
+   
+    font-size: 5vmin;
+ 
+font-family: 'Poppins', sans-serif;
+font-family: 'Work Sans', sans-serif;
+}
+
+.proj-contetnt{
+
+
+    height: 475px;
+    width: 550px;
+    border-radius: 25px;
+    box-shadow: 5px 10px var(--para);
+    border: 5px solid var(--heading);
+    margin: 75px 50px ;
+}
+
+
+.proj-contetnt h6{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+text-transform: uppercase;
+color: var(--heading);
+font-size: 3.5vmin;
+
+}
+
+.proj-contetnt li{
+
+    text-transform: capitalize;
+    font-weight: 450;
+    color: var(--para);
+    padding: 15px;
+    font-size: 1.75vmin;
+    line-height: 25px;
+}
+
+.dis-img img{
+    height: 550px;
+    width: 550px;
+}
+
+.dis-box{
+    display: flex;
+    padding: 15px;
+    gap: 150px;
+}
+
+
+
+
+
+/* RESPONSIVENESS START */
+
+@media  (max-width:765px) {
+
+    .box h1{
+        display: flex
+        ;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .box{
+        width: 100%;
+        height: 100%;
+    }
+    .card-section{
+        flex-direction: column;
+    }
+    .cards{
+        flex-direction: column;
+        padding: 5px;
+        margin: 5px;
+    }
+
+
+.advisor{
+
+    
+
+    
+   
+}
+.advisor-card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+
+.proj-contetnt{
+width: 100%;
+height: auto;
+    padding: 2px;
+    margin: auto;
+}
+.proj-contetnt li {
+    display: flex;
+    line-height: 25px;
+     padding: 2px;
+}
+.dis-box{
+    flex-direction: column;
+}
+.dis-img img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#discription{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+
+
+
+
+
+}
